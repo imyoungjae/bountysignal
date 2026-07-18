@@ -1,0 +1,38 @@
+name: Activate BountySignal Pro
+description: Verify a Base USDC payment and request 30-day private-feed access.
+title: "[ACTIVATE] @github-username"
+labels:
+  - activation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for joining BountySignal Pro. Only include public blockchain and GitHub information here. Never post a private key, seed phrase, email, or personal address.
+  - type: input
+    id: username
+    attributes:
+      label: GitHub username
+      description: The account that should be invited to the private feed.
+      placeholder: octocat
+    validations:
+      required: true
+  - type: input
+    id: transaction
+    attributes:
+      label: Base transaction hash
+      description: The public 0x transaction hash for the 29 USDC payment.
+      placeholder: 0x...
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I sent 29 native USDC on Base to the published BountySignal address.
+          required: true
+        - label: I read and accept TERMS.md.
+          required: true
+        - label: I understand that bounty selection and payout are not guaranteed.
+          required: true
+
