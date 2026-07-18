@@ -19,7 +19,8 @@ BountySignal Pro costs **29 USDC on Base for 30 days**.
    `0x77797F896DC65D779a25aa924d160763EE89c662`
 2. [Open an activation issue](https://github.com/imyoungjae/bountysignal/issues/new?template=activate.yml).
 3. Include the public transaction hash and the GitHub username that should
-   receive private-feed access.
+   receive private-feed access. The payment is checked automatically and a
+   private-repository invitation normally arrives within 15 minutes.
 
 Never post a seed phrase, private key, email address, home address, or other
 private information in an issue.
@@ -33,4 +34,3 @@ private information in an issue.
 - 30 days of access per payment; no automatic renewal
 
 Read [TERMS.md](TERMS.md) before paying.
-

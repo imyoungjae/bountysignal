@@ -7,9 +7,9 @@ Last updated: 2026-07-18
   unless renewed.
 - Only native USDC sent on the Base network is supported. Assets or transfers
   sent on another network may be unrecoverable.
-- Access is normally activated within 24 hours after a valid transaction and
+- Access is normally activated within 15 minutes after a valid transaction and
   activation issue are both received. If BountySignal cannot activate valid
-  access within that window, the payment will be returned to the sending
+  access within 24 hours, the payment will be returned to the sending
   address, less unavoidable network fees.
 - BountySignal provides research and alerts, not employment, financial advice,
   or a guarantee of selection, merge, reward, or payout.
@@ -19,4 +19,3 @@ Last updated: 2026-07-18
   product. Access may be revoked for abuse, fraud, or unlawful use.
 - Customers remain responsible for taxes and for complying with the rules of
   each source program.
-

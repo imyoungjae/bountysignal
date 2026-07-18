@@ -1,0 +1,39 @@
+name: Activate and expire Pro access
+
+on:
+  issues:
+    types: [opened, reopened, edited]
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: bountysignal-access
+  cancel-in-progress: false
+
+jobs:
+  activate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Verify payments and invite customers
+        env:
+          BOUNTYSIGNAL_ADMIN_TOKEN: ${{ secrets.BOUNTYSIGNAL_ADMIN_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          PUBLIC_REPO: imyoungjae/bountysignal
+          PRIVATE_REPO: imyoungjae/bountysignal-pro
+        run: node scripts/activate.mjs
+      - name: Expire completed subscriptions
+        if: github.event_name != 'issues'
+        env:
+          BOUNTYSIGNAL_ADMIN_TOKEN: ${{ secrets.BOUNTYSIGNAL_ADMIN_TOKEN }}
+          PUBLIC_REPO: imyoungjae/bountysignal
+          PRIVATE_REPO: imyoungjae/bountysignal-pro
+        run: node scripts/expire.mjs
