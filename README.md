@@ -8,7 +8,7 @@ rail so developers can reject stale work before spending hours on it.
 
 ## Live product
 
-Visit [BountySignal](https://fortyeight-rescue.chatgpt.site) for the free radar
+Visit [BountySignal](https://fortyeight-rescue.jaeber2se.chatgpt.site) for the free radar
 and current Pro terms.
 
 ## Pro activation
