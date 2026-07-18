@@ -1,0 +1,46 @@
+{
+  "summary": "Published an original, durable walkthrough in the BountySignal repository showing developers how runx can package reviewable bounty-delivery evidence, including a pinned CLI check, receipt workflow, artifact bindings, and the current local-sandbox limitation.",
+  "claim_type": "public_walkthrough",
+  "public_url": "https://github.com/imyoungjae/bountysignal/blob/main/docs/runx-for-bounty-evidence.md",
+  "runx_link_found": true,
+  "audience": "Developers using BountySignal to evaluate and complete paid GitHub issues",
+  "why_action_allowed": "The walkthrough is published in the claimant-operated BountySignal repository, where bounty delivery evidence is directly relevant. It does not post promotional content into an unrelated community.",
+  "observations": [
+    {
+      "claim_type": "public_walkthrough"
+    },
+    {
+      "public_url": "https://github.com/imyoungjae/bountysignal/blob/main/docs/runx-for-bounty-evidence.md"
+    },
+    {
+      "runx_link_found": true,
+      "links": [
+        "https://runx.ai",
+        "https://github.com/runxhq/runx"
+      ]
+    },
+    {
+      "summary": "The guide covers version pinning, SKILL.md and X.yaml roles, explicit receipt storage, history verification, notary publication, and reviewer-facing artifact names."
+    },
+    {
+      "audience": "Developers preparing evidence for paid issue and bounty review"
+    },
+    {
+      "why_action_allowed": "BountySignal owns the publication venue and the material extends its delivery-evidence documentation."
+    },
+    {
+      "dogfood_command": "npx -y @runxhq/cli@0.7.1 --version",
+      "dogfood_output": "runx-cli 0.7.1",
+      "checked_at": "2026-07-18T14:40:00Z"
+    },
+    {
+      "accuracy_caveat": "The guide explicitly states that current local CLI sandboxing is declared-policy-only and does not claim OS-level filesystem or network isolation."
+    }
+  ],
+  "sources": [
+    "https://github.com/runxhq/runx",
+    "https://github.com/runxhq/runx/blob/main/docs/reference.md",
+    "https://github.com/runxhq/runx/blob/main/docs/agent-skills.md",
+    "https://github.com/runxhq/runx/releases/tag/cli-v0.7.1"
+  ]
+}

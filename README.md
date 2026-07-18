@@ -34,3 +34,10 @@ private information in an issue.
 - 30 days of access per payment; no automatic renewal
 
 Read [TERMS.md](TERMS.md) before paying.
+
+## Delivery evidence
+
+Winning a paid issue still requires reviewable proof. The
+[runx guide](docs/runx-for-bounty-evidence.md) explains one reproducible way to
+package a governed run, inspect its receipt, and give a bounty reviewer durable
+evidence links.
