@@ -18,6 +18,19 @@ an [x402 discovery manifest](https://fortyeight-rescue.jaeber2se.chatgpt.site/.w
 and an [agent card](https://fortyeight-rescue.jaeber2se.chatgpt.site/.well-known/agent.json).
 Payments settle directly to the declared merchant wallet in USDC.
 
+### Try the free preflight
+
+Check any public GitHub issue before paying:
+
+```bash
+curl --get \
+  --data-urlencode "issue_url=https://github.com/<owner>/<repo>/issues/<number>" \
+  https://fortyeight-rescue.jaeber2se.chatgpt.site/api/brief/preflight
+```
+
+The response reports current source availability, open or closed state, stated
+reward markers, exclusions, and eligibility for the paid due-diligence brief.
+
 ### Opportunity radar
 
 The radar returns ranked, source-linked public software bounties. It costs
