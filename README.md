@@ -60,12 +60,19 @@ work is excluded from both products.
 
 BountySignal Pro costs **29 USDC on Base for 30 days**.
 
+Buy through the
+[PayanAgent Pro listing](https://payanagent.com/x402/kh76hnr152vyn32m63n0m2gksh8avqdm)
+with a `github_username`, or pay directly:
+
 1. Send exactly 29 native USDC on Base to:
    `0x77797F896DC65D779a25aa924d160763EE89c662`
 2. [Open an activation issue](https://github.com/imyoungjae/bountysignal/issues/new?template=activate.yml).
 3. Include the public transaction hash and the GitHub username that should
    receive private-feed access. The payment is checked automatically and a
    private-repository invitation normally arrives within 15 minutes.
+
+For a PayanAgent purchase, copy the transaction hash from the response's
+`X-Tx-Hash` header and use the activation URL returned by the service.
 
 Never post a seed phrase, private key, email address, home address, or other
 private information in an issue.
