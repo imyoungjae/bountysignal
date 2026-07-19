@@ -56,11 +56,20 @@ The paid request body requires `issue_url` and accepts optional `skills` and
 rejected before payment. Security, vulnerability, smart-contract, and offensive
 work is excluded from both products.
 
-## Pro activation
+## Pro purchase and activation
 
 BountySignal Pro costs **29 USDC on Base for 30 days**.
 
-Buy through the
+Agents can purchase directly with x402 by calling:
+
+- Base: `POST /api/pro/x402/base`
+- JSON body: `{"github_username":"<account>"}`
+
+The paid response returns the activation URL. Decode the Base64
+`PAYMENT-RESPONSE` header and copy its `transaction` field into the activation
+form.
+
+Buyers can alternatively use the
 [PayanAgent Pro listing](https://payanagent.com/x402/kh76hnr152vyn32m63n0m2gksh8avqdm)
 with a `github_username`, or pay directly:
 
@@ -72,7 +81,7 @@ with a `github_username`, or pay directly:
    private-repository invitation normally arrives within 15 minutes.
 
 For a PayanAgent purchase, copy the transaction hash from the response's
-`X-Tx-Hash` header and use the activation URL returned by the service.
+`X-Tx-Hash` header and use the returned activation URL.
 
 Never post a seed phrase, private key, email address, home address, or other
 private information in an issue.
