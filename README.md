@@ -96,6 +96,18 @@ private information in an issue.
 
 Read [TERMS.md](TERMS.md) before paying.
 
+## Implementation services
+
+For teams that want a scoped code change instead of an API subscription, the
+same developer offers three fixed-price services through LaborX escrow:
+
+- [Focused Next.js or React production fix — $149](https://laborx.com/gigs/i-will-fix-a-focused-next-js-or-react-production-bug-within-48-hours-106580)
+- [One external-service integration for Next.js — $249](https://laborx.com/gigs/i-will-connect-one-external-service-to-your-next-js-project-106606)
+- [Next.js deployment or CI workflow repair — $499](https://laborx.com/gigs/i-will-repair-one-next-js-deployment-or-ci-workflow-106605)
+
+Each listing defines its fixed boundary, required access, delivery window, and
+exclusions. Work begins only after the LaborX contract is funded or escrowed.
+
 ## Delivery evidence
 
 Winning a paid issue still requires reviewable proof. The
